@@ -1,5 +1,7 @@
 # go-simple-tcp-echo
 
+[![Go](https://github.com/nabeken/go-simple-tcp-echo/actions/workflows/go.yml/badge.svg)](https://github.com/nabeken/go-simple-tcp-echo/actions/workflows/go.yml)
+
 `go-simple-tcp-echo` is a simple TCP + TLS echo server in Go to test networking stack including TLS stack.
 
 ```
