@@ -168,13 +168,31 @@ func (s *server) serveConn(conn net.Conn) {
 
 	// start TLS handshake if requested
 	if s.tlsConfig != nil {
+		dumpPrefix := fmt.Sprintf("%d-%s", time.Now().UTC().Unix(), conn.RemoteAddr())
+
+		tlsConfig := s.tlsConfig.Clone()
+
+		if s.useKeyLog {
+			keyLogFn := fmt.Sprintf("%s-keylog.txt", dumpPrefix)
+			f, err := os.Create(keyLogFn)
+			if err != nil {
+				l.Error("Failed to create a key log file", "error", err.Error())
+				return
+			}
+			defer f.Close()
+
+			l.Info("Writing key log file", "file", f.Name())
+
+			tlsConfig.KeyLogWriter = f
+		}
+
 		l.Info("Starting TLS handshake...")
 
-		tlsConn := tls.Server(conn, s.tlsConfig)
+		tlsConn := tls.Server(conn, tlsConfig)
 		err := tlsConn.Handshake()
 
 		connState := tlsConn.ConnectionState()
-		l = stdslog.With(
+		l = l.With(
 			"connection_state", stdslog.GroupValue(
 				stdslog.String("version", tls.VersionName(connState.Version)),
 				stdslog.Bool("handshake_complete", connState.HandshakeComplete),
@@ -187,40 +205,20 @@ func (s *server) serveConn(conn net.Conn) {
 
 		if err != nil {
 			l.Info("TLS handshake failed",
-				"error", err,
+				"error", err.Error(),
 			)
 			return
 
 		} else {
 			l = l.With("in_tls", true)
 
-			l.Info("TLS handshake completed successfully",
-				"error", err,
-			)
+			l.Info("TLS handshake completed successfully")
 
 			// reinstall bw and br
 			conn = tlsConn
 			br = bufio.NewReader(conn)
 			bw = bufio.NewWriter(conn)
 		}
-	}
-
-	dumpPrefix := fmt.Sprintf("%d-%s", time.Now().UTC().Unix(), conn)
-
-	tlsConfig := s.tlsConfig.Clone()
-
-	if s.useKeyLog {
-		keyLogFn := fmt.Sprintf("%s-keylog.txt", dumpPrefix)
-		f, err := os.Create(keyLogFn)
-		if err != nil {
-			l.Error("Failed to create a key log file", "error", err.Error())
-			return
-		}
-		defer f.Close()
-
-		l.Info("Writing key log file", "file", f.Name())
-
-		tlsConfig.KeyLogWriter = f
 	}
 
 	if !s.disableGreeting {
