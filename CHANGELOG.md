@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.1](https://github.com/nabeken/go-simple-tcp-echo/compare/v1.0.0...v1.0.1) (2025-05-08)
+
+
+### Bug Fixes
+
+* **deps:** update actions/create-github-app-token action to v2 ([#10](https://github.com/nabeken/go-simple-tcp-echo/issues/10)) ([2665f03](https://github.com/nabeken/go-simple-tcp-echo/commit/2665f0314d57e1d1d24d328e1d08e77a9397eb53))
+* **deps:** update actions/create-github-app-token digest to 30bf625 ([#11](https://github.com/nabeken/go-simple-tcp-echo/issues/11)) ([40aa91f](https://github.com/nabeken/go-simple-tcp-echo/commit/40aa91fe400dd8b84a99643358dd4595a5642382))
+* **deps:** update actions/create-github-app-token digest to d72941d ([#7](https://github.com/nabeken/go-simple-tcp-echo/issues/7)) ([8b38f5d](https://github.com/nabeken/go-simple-tcp-echo/commit/8b38f5dd92f0750e3caca3462d14a7dba1d9032e))
+* **deps:** update actions/create-github-app-token digest to db3cdf4 ([#12](https://github.com/nabeken/go-simple-tcp-echo/issues/12)) ([738270e](https://github.com/nabeken/go-simple-tcp-echo/commit/738270e8e320ef32ad6f2ff7e2c8d149b5ef03bc))
+* **deps:** update actions/create-github-app-token digest to df432ce ([#13](https://github.com/nabeken/go-simple-tcp-echo/issues/13)) ([ab382da](https://github.com/nabeken/go-simple-tcp-echo/commit/ab382daca21cb2bddfef4d6eeb6ac3c80849e29e))
+* **deps:** update actions/setup-go digest to d35c59a ([#15](https://github.com/nabeken/go-simple-tcp-echo/issues/15)) ([f9f3b6c](https://github.com/nabeken/go-simple-tcp-echo/commit/f9f3b6ce7e4fd1b4ffd7da314ac686bb65aea75e))
+* **deps:** update dependency golang to v1.24.2 ([#9](https://github.com/nabeken/go-simple-tcp-echo/issues/9)) ([46421be](https://github.com/nabeken/go-simple-tcp-echo/commit/46421be5f771470939d05ff167a35cb4fe46b75f))
+* **deps:** update dependency golang to v1.24.3 ([#14](https://github.com/nabeken/go-simple-tcp-echo/issues/14)) ([b16e045](https://github.com/nabeken/go-simple-tcp-echo/commit/b16e045ac294051027d4b8df5e0024b3cbeef48e))
+* **deps:** update goreleaser/goreleaser-action digest to 9c156ee ([#8](https://github.com/nabeken/go-simple-tcp-echo/issues/8)) ([332d691](https://github.com/nabeken/go-simple-tcp-echo/commit/332d691b88fed682df41b296a0a018889ecadf0d))
+* dump keylog properly ([#5](https://github.com/nabeken/go-simple-tcp-echo/issues/5)) ([d827a7d](https://github.com/nabeken/go-simple-tcp-echo/commit/d827a7d7fd67590fe2909cc8d3dcb4346bd86eff))
+
 ## 1.0.0 (2025-03-21)
 
 
