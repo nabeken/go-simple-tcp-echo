@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/nabeken/go-simple-tcp-echo/compare/v1.0.1...v1.0.2) (2026-05-13)
+
+
+### Bug Fixes
+
+* **deps:** update actions/create-github-app-token digest to bcd2ba4 ([#61](https://github.com/nabeken/go-simple-tcp-echo/issues/61)) ([192a654](https://github.com/nabeken/go-simple-tcp-echo/commit/192a6545d9e067f07f76e2d6da22207d34a8c86d))
+* **deps:** update dependency golang to v1.26.3 ([#59](https://github.com/nabeken/go-simple-tcp-echo/issues/59)) ([fa5f599](https://github.com/nabeken/go-simple-tcp-echo/commit/fa5f599e9374015749249b1e7f841af2e60eb8be))
+
 ## [1.0.1](https://github.com/nabeken/go-simple-tcp-echo/compare/v1.0.0...v1.0.1) (2026-04-29)
 
 
