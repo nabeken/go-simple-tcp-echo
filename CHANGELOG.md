@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.2](https://github.com/nabeken/go-simple-tcp-echo/compare/v1.0.1...v1.0.2) (2026-09-29)
+
+
+### Bug Fixes
+
+* **deps:** update actions/checkout action to v7 ([#64](https://github.com/nabeken/go-simple-tcp-echo/issues/64)) ([e732bc8](https://github.com/nabeken/go-simple-tcp-echo/commit/e732bc8e2ea6025ed29c46438306e3ade59c478c))
+* **deps:** update actions/checkout digest to 3d3c42e ([#69](https://github.com/nabeken/go-simple-tcp-echo/issues/69)) ([bb7f4a3](https://github.com/nabeken/go-simple-tcp-echo/commit/bb7f4a33c07cd5f7e44b99da30e66e2c99192500))
+* **deps:** update actions/create-github-app-token digest to bcd2ba4 ([#61](https://github.com/nabeken/go-simple-tcp-echo/issues/61)) ([192a654](https://github.com/nabeken/go-simple-tcp-echo/commit/192a6545d9e067f07f76e2d6da22207d34a8c86d))
+* **deps:** update actions/setup-go action to v7 ([#68](https://github.com/nabeken/go-simple-tcp-echo/issues/68)) ([17ffcb2](https://github.com/nabeken/go-simple-tcp-echo/commit/17ffcb227ffcaebf99a070d82daa8d8f6488598a))
+* **deps:** update actions/setup-go digest to 924ae3a ([#65](https://github.com/nabeken/go-simple-tcp-echo/issues/65)) ([40d3e2e](https://github.com/nabeken/go-simple-tcp-echo/commit/40d3e2ef7e20c03d0de8f3f3954285bedc9414f9))
+* **deps:** update dependency golang to v1.26.3 ([#59](https://github.com/nabeken/go-simple-tcp-echo/issues/59)) ([fa5f599](https://github.com/nabeken/go-simple-tcp-echo/commit/fa5f599e9374015749249b1e7f841af2e60eb8be))
+* **deps:** update dependency golang to v1.26.5 ([#67](https://github.com/nabeken/go-simple-tcp-echo/issues/67)) ([50c6e6c](https://github.com/nabeken/go-simple-tcp-echo/commit/50c6e6cdccfab23a44faccd5dce54d34e2a5cc0b))
+* **deps:** update dependency golang to v1.26.6 ([#70](https://github.com/nabeken/go-simple-tcp-echo/issues/70)) ([a736e72](https://github.com/nabeken/go-simple-tcp-echo/commit/a736e726cf7a0b90f141e361cc9161469617f329))
+* **deps:** update github-actions ([#62](https://github.com/nabeken/go-simple-tcp-echo/issues/62)) ([baf0304](https://github.com/nabeken/go-simple-tcp-echo/commit/baf03041d853597cbfc2b8cfbd78012aed786682))
+* **deps:** update github-actions to v7 ([e732bc8](https://github.com/nabeken/go-simple-tcp-echo/commit/e732bc8e2ea6025ed29c46438306e3ade59c478c))
+* **deps:** update go to v1.26.4 ([#63](https://github.com/nabeken/go-simple-tcp-echo/issues/63)) ([60e2b14](https://github.com/nabeken/go-simple-tcp-echo/commit/60e2b1490de7aa0bd8ef32f36e89f95c140902f5))
+* **deps:** update goreleaser/goreleaser-action digest to f06c13b ([#66](https://github.com/nabeken/go-simple-tcp-echo/issues/66)) ([16ba3b7](https://github.com/nabeken/go-simple-tcp-echo/commit/16ba3b700aba3681838d8193c96a3205af479869))
+* **deps:** update suzuki-shunsuke/github-action-renovate-config-validator action to v2.2.0 ([#72](https://github.com/nabeken/go-simple-tcp-echo/issues/72)) ([a5d2fe7](https://github.com/nabeken/go-simple-tcp-echo/commit/a5d2fe7dc2947be2ef8e7a0e38c6e498aa0e220d))
+
 ## [1.0.1](https://github.com/nabeken/go-simple-tcp-echo/compare/v1.0.0...v1.0.1) (2026-04-29)
 
 
